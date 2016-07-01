@@ -8,7 +8,7 @@ Status:
 
 Instructions for the ROS talker/listerner tutorial run on a conventional Ubuntu install -tested, working
 
-Instructions for the ROS talker/listener tutorial run as 3 docker instances of one image using the Docker network -tested, working
+Instructions for the ROS talker/listener tutorial run as 3 docker instances off one image using the Docker network -tested, working
 
 Intructions for the ROS talker/listener tutorial implemented as 3 docker instances run from a docker_compose.yml file - YAML problems, not working yet
 
