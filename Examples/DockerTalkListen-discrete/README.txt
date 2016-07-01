@@ -15,9 +15,9 @@ to test your installation
 
 docker run hello-world
 
-next, we'll use the files found in ~/CubeSpawn-Docker/rostutorials
+next, we'll use the files found in ~/CubeSpawn-TestStack-DKR/rostutorials
 
-cd CubeSpawn-Docker/rostutorials
+cd CubeSpawn-TestStack-DKR/rostutorials
 
 docker run -t ros:ros-tutorials .
 
