@@ -1,0 +1,16 @@
+
+printf "FROM ros:indigo-ros-base\nRUN apt-get update && apt-get install -y ros-indigo-ros-tutorials ros-indigo-common-tutorials && rm -rf /var/lib/apt/lists/ \n” > Dockerfile
+
+
+
+
+docker build –tag ros:ros-tutorials .
+
+docker network create foo
+
+docker run -it –rm –net=foo –name master ros:ros-tutorials  roscore
+
+docker run -it –rm –net=foo –env ROS_HOSTNAME=talker –env ROS_MASTER_URI=http://master:11311 –name talker ros:ros-tutorials  rosrun roscpp_tutorials talker
+
+docker run -it –rm –net=foo –env ROS_HOSTNAME=listener –env ROS_MASTER_URI=http://master:11311 –name listener ros:ros-tutorials  rosrun roscpp_tutorials listener
+
