@@ -6,9 +6,9 @@ wget -qO- https://get.docker.com/ | sh
 
 If you do not want to type "sudo" before every docker command
 add your user to the docker group
-...
+
 sudo usermod -aG docker <your-user>
-...
+
 you must log out and back in for this to take effect
 
 to test your installation 
