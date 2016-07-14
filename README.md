@@ -2,7 +2,7 @@ CubeSpawn Control Framework
 
 ***Updated 07/14/2016***
 
-As implementer vie Docker microservices architecture
+As implementer via Docker microservices architecture
 
 As of 7/1/2016 the first two of three examples are completed.
 
