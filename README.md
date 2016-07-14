@@ -1,10 +1,12 @@
 CubeSpawn Control Framework 
 
+Tests and examples to get the general process together - then we'll buildout shell docker and docker-compose files to assemble the control and simulation nodes
+
 ***Updated 07/14/2016***
 
 As implementer via Docker microservices architecture
 
-As of 7/1/2016 the first two of three examples are completed.
+Assumptions: all the examples were created either directly on a 14.04 LTS Ubuntu install, or via SSH to same.
 
 Status:
 
