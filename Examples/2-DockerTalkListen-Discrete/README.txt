@@ -1,4 +1,4 @@
-This performs the same talker listener setup using docker images
+This performs the same talker listener setup given in example 1, but using docker images
 
 There are many ways to install docker, but this is the quickest I've found
 
@@ -21,9 +21,9 @@ cd ~
 
 git clone https://github.com/CubeSpawn/CubeSpawn-TestStack-DKR.git
 
-next, we'll use the files found in ~/CubeSpawn-TestStack-DKR/Examples/DockerTalkListen-discrete/rosmaster
+next, we'll use the files found in ~/CubeSpawn-TestStack-DKR/Examples/2-DockerTalkListen-Discrete/rosmaster
 
-cd ~/CubeSpawn-TestStack-DKR/Examples/DockerTalkListen-discrete/rosmaster
+cd ~/CubeSpawn-TestStack-DKR/Examples/2-DockerTalkListen-Discrete/rosmaster
 
 docker build -t ros:ros-tutorials .
 
@@ -31,11 +31,13 @@ cd create a docker network
 
 docker network create testnet
 
-run the roscore container 
+run the roscore container in a new terminal
+ 
 docker run -it -–rm --name master -–net=testnet ros:ros-tutorials roscore
 
 open a new terminal
-run the talker container
+
+run the talker container:
 
 docker run -it --rm --name talker --net=testnet --env ROS_HOSTNAME=talker --env ROS_MASTER_URI=http://master:11311 ros:ros-tutorials  rosrun roscpp_tutorials talker
 
