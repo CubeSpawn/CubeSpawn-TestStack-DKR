@@ -15,13 +15,19 @@ to test your installation
 
 docker run hello-world
 
-next, we'll use the files found in ~/CubeSpawn-TestStack-DKR/rostutorials
+to run the examples, type or copy: 
 
-cd CubeSpawn-TestStack-DKR/rostutorials
+cd ~
 
-docker run -t ros:ros-tutorials .
+git clone https://github.com/CubeSpawn/CubeSpawn-TestStack-DKR.git
 
-create a docker network
+next, we'll use the files found in ~/CubeSpawn-TestStack-DKR/Examples/DockerTalkListen-discrete/rosmaster
+
+cd ~/CubeSpawn-TestStack-DKR/Examples/DockerTalkListen-discrete/rosmaster
+
+docker build -t ros:ros-tutorials .
+
+cd create a docker network
 
 docker network create testnet
 

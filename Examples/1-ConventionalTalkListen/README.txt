@@ -14,7 +14,7 @@ set the environment variable to bash
 
 cd ~
 
-to set the encvironment for this shell
+to set the environment for this shell
 source /opt/ros/indigo/setup.bash
 
 but to add this to bash use:

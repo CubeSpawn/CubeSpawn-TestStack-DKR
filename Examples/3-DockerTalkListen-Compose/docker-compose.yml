@@ -1,0 +1,30 @@
+version: '2'
+services:
+  master:
+    image: ros:ros-tutorials
+    ports:
+      -  "11311:11311"
+    command: roscore
+
+  talker:
+    image: ros:ros-tutorials
+    environment:
+      -  ROS_HOSTNAME=talker
+      -  ROS_MASTER_URI=http://master:11311
+    command: rosrun roscpp_tutorials talker
+    depends_on:
+      -  master
+    links:
+      -  master
+
+  listener:
+    image: ros:ros-tutorials
+    environment:
+      -  ROS_HOSTNAME=listener
+      -  ROS_MASTER_URI=http://master:11311
+    command: rosrun roscpp_tutorials listener
+    depends_on:
+      -  master
+    links:
+      -  master
+
