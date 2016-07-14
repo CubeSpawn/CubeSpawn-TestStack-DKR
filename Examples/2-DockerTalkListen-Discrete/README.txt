@@ -16,11 +16,11 @@ to test your installation
 docker run hello-world
 
 to run the examples, type or copy: 
-
+'''
 cd ~
 
 git clone https://github.com/CubeSpawn/CubeSpawn-TestStack-DKR.git
-
+'''
 next, we'll use the files found in ~/CubeSpawn-TestStack-DKR/Examples/2-DockerTalkListen-Discrete/rosmaster
 
 cd ~/CubeSpawn-TestStack-DKR/Examples/2-DockerTalkListen-Discrete/rosmaster
